@@ -1,0 +1,53 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "intelligent-code-review-agent"
+version = "0.1.0"
+description = "AI-powered code review agent using Claude and LangChain"
+authors = ["Xiaomi AI Team"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+langchain = "^0.3.0"
+langchain-anthropic = "^0.3.0"
+langchain-community = "^0.3.0"
+gitpython = "^3.1.0"
+tree-sitter = "^0.23.0"
+tree-sitter-python = "^2.3.0"
+tree-sitter-javascript = "^2.3.0"
+tree-sitter-typescript = "^0.23.0"
+tree-sitter-c-sharp = "^0.23.0"
+tree-sitter-java = "^0.23.0"
+tree-sitter-go = "^0.23.0"
+tree-sitter-rust = "^0.23.0"
+tree-sitter-c = "^0.23.0"
+tree-sitter-cpp = "^0.23.0"
+tree-sitter-php = "^0.23.0"
+tree-sitter-ruby = "^0.23.0"
+tree-sitter-swift = "^0.7.0"
+tree-sitter-kotlin = "^1.0.0"
+tree-sitter-scala = "^0.23.0"
+tree-sitter-lua = "^0.5.0"
+tree-sitter-sql = "^0.3.0"
+tree-sitter-julia = "^0.23.0"
+tree-sitter-matlab = "^1.0.0"
+chromadb = "^0.5.0"
+pydantic = "^2.9.0"
+pydantic-settings = "^2.5.0"
+python-dotenv = "^1.0.0"
+sentence-transformers = "^3.0.0"
+tenacity = "^9.0.0"
+rich = "^13.0.0"
+fastapi = "^0.115.0"
+uvicorn = "^0.34.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0.0"
+pytest-asyncio = "^0.24.0"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
